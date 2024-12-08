@@ -1,0 +1,92 @@
+/* Estilo del navbar */
+.navbar {
+    --bs-body-bg: #2f2c3d;
+    --bs-navbar-bg: #262431;
+    --bs-navbar-color: #ffbf6b;
+    --bs-navbar-hover-color: #ffbf6b;
+    background: linear-gradient(90deg, #262431, #33303f);
+    color: #ffbf6b;
+    padding: 10px 20px;
+    height: 56px;
+    border-bottom: 2px solid #33303f;
+  }
+  
+  /* Logo y texto */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #ffbf6b;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .navbar-brand img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+  
+  /* Botones del navbar */
+  .navbar .nav-link {
+    color: #ffbf6b;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 20px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navbar .nav-link:hover {
+    background-color: #ffbf6b;
+    color: #262431;
+  }
+  
+  /* Fondo de la página */
+  body {
+    background-color: #2f2c3d;
+    color: #E1E1E2;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Botones de acciones */
+  .download-btn {
+    --background: linear-gradient(90deg, #f0b364, #bf802d);
+    --background-activated: #df9b43;
+    --border-radius: 30px;
+    --color: #262431;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .download-btn:hover {
+    background: #df9b43;
+  }
+  
+  /* Centrar la imagen QR */
+#qr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;  /* Opcional: para agregar espacio encima */
+}
+
+/* Aumentar el tamaño del código QR */
+#qr-code {
+    width: 300px; /* Tamaño ajustado del QR */
+    height: auto; /* Mantener la proporción */
+}
