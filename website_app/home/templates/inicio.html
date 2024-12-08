@@ -10,38 +10,48 @@
         <link rel="stylesheet" href="{% static 'CSS/estilos.css' %}">
     </head>
     <body>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="{% static 'imagenes/running.png' %}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                    Aplicación de Pedometría
-                </a>
-                <ul class="navbar-nav flex-row">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">Inicio</a>
-                    </li>
-                    <li class="nav-item ms-3">
-                        <a class="nav-link" href="">Preguntas Frecuentes</a>
-                    </li>
-                </ul>
+        <div class="container-wrapper d-flex flex-column h-100">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="{% static 'imagenes/running.png' %}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        Aplicación de Pedometría
+                    </a>
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Inicio</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="">Preguntas Frecuentes</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <!-- Cuerpo -->
+            <div class="container text-center mt-5">
+                <h1>Descarga Nuestra Aplicación</h1>
+    
+                <!-- Contenedor del QR solo en escritorio -->
+                <div id="qr-container">
+                    <img id="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?data=https://pagina-pedometro.onrender.com/&size=200x200" alt="Código QR">
+                </div>
+    
+                <!-- Botón de descarga solo en móviles -->
+                <button id="download-btn" class="btn btn-primary mt-3" style="display:none;">
+                    Descargar APK
+                </button>
             </div>
-        </nav>
-        
-        <!-- Cuerpo -->
-        <div class="container text-center mt-5">
-            <h1>Descarga Nuestra Aplicación</h1>
-
-            <!-- Contenedor del QR solo en escritorio -->
-            <div id="qr-container">
-                <img id="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?data=https://pagina-pedometro.onrender.com/&size=200x200" alt="Código QR">
-            </div>
-
-            <!-- Botón de descarga solo en móviles -->
-            <button id="download-btn" class="btn btn-primary mt-3" style="display:none;">
-                Descargar APK
-            </button>
+            <footer style="background-color: #2F3136; color: white; text-align: center; padding: 20px; margin-top: auto;">
+                <div style="margin-bottom: 10px;">
+                    <a href="https://www.facebook.com" target="_blank" style="margin: 0 10px; color: #fff; text-decoration: none;">Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank" style="margin: 0 10px; color: #fff; text-decoration: none;">Twitter</a>
+                    <a href="https://www.instagram.com" target="_blank" style="margin: 0 10px; color: #fff; text-decoration: none;">Instagram</a>
+                </div>
+                <p style="margin: 5px;">&copy; 2024 Aplicacion Pedometro. Todos los derechos reservados.</p>
+                <p style="margin: 5px;">Hecho con ❤️ usando Django</p>
+            </footer>
         </div>
-
         <script>
             // Detecta si el dispositivo es móvil
             const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);

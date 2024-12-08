@@ -1,3 +1,9 @@
+.container-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; /* Stacks content vertically */
+}
+
 /* Estilo del navbar */
 .navbar {
     --bs-body-bg: #2f2c3d;
