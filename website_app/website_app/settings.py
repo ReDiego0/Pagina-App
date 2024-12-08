@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-d5l%o4_j1bu$kf0wq)&pt(+1f%t4(n8l0p+fnnt)40^e+t3)na
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.4', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['192.168.1.4', 'localhost', '127.0.0.1', 'pagina-pedometro.onrender.com']
 
 
 # Application definition
