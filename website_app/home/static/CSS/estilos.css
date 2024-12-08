@@ -96,3 +96,58 @@
     width: 300px; /* Tamaño ajustado del QR */
     height: auto; /* Mantener la proporción */
 }
+/* Estilo de las preguntas */
+.faq-container {
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq-item-header {
+  background-color: #2F3136;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.faq-item-content {
+  display: none;
+  padding: 15px;
+  background-color: #202238;
+  font-size: 16px;
+}
+
+.faq-item-content p {
+  margin: 0;
+}
+
+/* Efecto de deslizamiento */
+.faq-item-content.show {
+  display: block;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+      max-height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      opacity: 0;
+  }
+  to {
+      max-height: 1000px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      opacity: 1;
+  }
+}

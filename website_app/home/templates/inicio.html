@@ -13,16 +13,16 @@
         <div class="container-wrapper d-flex flex-column h-100">
             <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="{% url 'home' %}">
                         <img src="{% static 'imagenes/running.png' %}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                         Aplicación de Pedometría
                     </a>
                     <ul class="navbar-nav flex-row">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link" href="">Preguntas Frecuentes</a>
+                            <a class="nav-link" href="{% url 'faq' %}">Preguntas Frecuentes</a>
                         </li>
                     </ul>
                 </div>
